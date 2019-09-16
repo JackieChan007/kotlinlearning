@@ -1,9 +1,7 @@
 package com.gs.kotlinlearning;
 
 import com.gs.kotlinlearning.controller.java.TestJavaClass;
-import com.gs.kotlinlearning.controller.kotlin.KotlinA;
-import com.gs.kotlinlearning.controller.kotlin.KotlinB;
-import com.gs.kotlinlearning.controller.kotlin.TestKotlin;
+import com.gs.kotlinlearning.controller.kotlin.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -16,6 +14,9 @@ public class KotlinlearningApplication {
         new TestKotlin().kotlin();
         new KotlinA().printKotlinA();
         new TestJavaClass().testJavaClass();
+        System.out.println(new SchoolInfo("good"));
+        System.out.println(new SchoolLevel("excellent").toString());
+        System.out.println(new SchoolLevel("excellent").getSchoolFamous());
         new KotlinB().printKotlinB();
     }
 
