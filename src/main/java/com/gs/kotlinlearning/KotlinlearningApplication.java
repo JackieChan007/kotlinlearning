@@ -13,7 +13,7 @@ public class KotlinlearningApplication {
         System.out.println("*************test kotlin***********");
         new TestKotlin().kotlin();
         new KotlinA().printKotlinA();
-        new TestJavaClass().testJavaClass();
+//        new TestJavaClass().testJavaClass();
         System.out.println(new SchoolInfo("good"));
         System.out.println(new SchoolLevel("excellent").toString());
         System.out.println(new SchoolLevel("excellent").getSchoolFamous());

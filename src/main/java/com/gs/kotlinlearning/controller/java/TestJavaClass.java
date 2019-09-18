@@ -1,5 +1,8 @@
 package com.gs.kotlinlearning.controller.java;
 
+
+import com.gs.kotlinlearning.controller.kotlin.SingleClass;
+
 /**
  * \* Created with IntelliJ IDEA.
  * \* User: JackieChan
@@ -11,8 +14,11 @@ package com.gs.kotlinlearning.controller.java;
  */
 public class TestJavaClass {
 
-    public void testJavaClass(){
+    public static void main (String[]args){
         System.out.println("testJavaClass");
+        SingleClass singleClass = SingleClass.Companion.ofSingleClass("1");
+        SingleClass singleClazz = SingleClass.ofSingleClazz("1");
+        System.out.println(singleClass.getValue());
     }
 }
 
