@@ -2,6 +2,7 @@ package com.gs.kotlinlearning.controller.java;
 
 
 import com.gs.kotlinlearning.controller.kotlin.SingleClass;
+import com.gs.kotlinlearning.controller.kotlin.StaticClazz;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -19,6 +20,7 @@ public class TestJavaClass {
         SingleClass singleClass = SingleClass.Companion.ofSingleClass("1");
         SingleClass singleClazz = SingleClass.ofSingleClazz("1");
         System.out.println(singleClass.getValue());
+         StaticClazz.INSTANCE.a();
     }
 }
 
